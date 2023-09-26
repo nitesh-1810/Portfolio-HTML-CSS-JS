@@ -8,17 +8,17 @@
   </head>
   <body>
     <div id="wrapper">
-      <div class="container">
+      <div class="container" id="home">
         <div class="navbar">
           <div class="logo-container">
-            <img class="logo" src="http://via.placeholder.com/200" alt="logo" />
+            <img class="logo" src="./images//N.png" alt="logo" />
             <div class="logo-text">itesh Singh</div>
           </div>
 
           <div class="nav-items">
             <div><a href="#projects">Projects</a></div>
             <div><a href="#skills">Skills</a></div>
-            <div><a href="#contactme">Contact Me</a></div>
+            <div><a href="#contactus">Contact Me</a></div>
           </div>
         </div>
         <div class="hero-section">
@@ -61,7 +61,7 @@
         </div>
       </div>
 
-      <div class="project-section">
+      <div class="project-section" id="projects">
         <h2 class="page-header">Project</h2>
 
         <div class="project-container">
@@ -498,6 +498,84 @@
           />
         </div>
       </div>
+      <div class="contactus-form-container" id="contactus">
+        <div class="container">
+          <h1 class="contactus-heading">Contact Me</h1>
+          <h3 class="contactus-sub-heading">
+            Question, thoughts, or just want to say hello?
+          </h3>
+          <div class="contactus-form">
+            <form action="">
+              <div class="formfield-container">
+                <input
+                  class="formfield"
+                  type="'text"
+                  name="name"
+                  id=""
+                  placeholder="Enter your name"
+                />
+                <input
+                  class="formfield"
+                  type="'email"
+                  name="email"
+                  id=""
+                  placeholder="Enter your email"
+                />
+                <input
+                  class="formfield"
+                  type="'text"
+                  name="subject"
+                  id=""
+                  placeholder="Enter your subject"
+                />
+                <textarea
+                  class="formfield formfield-textarea"
+                  cols="30"
+                  rows="10"
+                  name="message"
+                  id=""
+                  placeholder="Enter your message"
+                ></textarea>
+              </div>
+              <div>
+                <button type="submit" class="btn-pink" id="submit-btn">
+                  Send Message<i
+                    class="submit-icon fa-solid fa-paper-plane"
+                  ></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer-faded-text">Nitesh Singh</div>
+            <div class="link-wrapper">
+              <div>
+                <a href="#projects">Project</a>
+              </div>
+              <div>
+                <a href="#skills">Skills</a>
+              </div>
+              <div>
+                <a href="#contactus">Contact Me</a>
+              </div>
+              <div>
+                <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+              </div>
+            </div>
+            <div class="icon-wrapper">
+              <i class="fa-brands fa-linkedin icon"></i>
+              <i class="fa-brands fa-github icon"></i>
+              <i class="fa-brands fa-twitter icon"></i>
+              <i class="fa-brands fa-instagram icon"></i>
+              <i class="fa-regular fa-envelope icon"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -514,7 +592,7 @@
         backDelay: 1000,
       });
 
-      //console.log(window.innerWidth);
+      console.log(window.innerWidth);
     </script>
   </body>
 </html>
