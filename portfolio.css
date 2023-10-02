@@ -308,6 +308,18 @@ a {
     left: 48%;
   }
 }
+.resume {
+  display: flex;
+  gap: 2rem;
+}
+.cv {
+  background-color: rgba(7, 97, 22, 0.779);
+}
+
+.cv:hover {
+  border: 3px solid rgba(7, 97, 22, 0.779);
+  color: black;
+}
 
 .project-section {
   background-color: rgb(231, 231, 231);
