@@ -24,17 +24,24 @@
 }
 
 .contact-container {
-  width: 800px;
   /* to center this div */
   margin: 0 auto;
 }
 
 .contact-box {
   display: flex;
+  margin-top: 7.5rem;
 }
 
 .contactus-image {
+  position: relative;
   width: 50%;
+  background-color: rgb(231, 231, 231);
+}
+
+.contactus-image img {
+  width: 100%;
+  height: 100%;
 }
 
 .footer-container {
@@ -575,7 +582,7 @@ a {
 @keyframes blobAnimation {
   50% {
     top: 54%;
-    left: 56%;
+    bottom: 56%;
   }
 }
 
@@ -600,12 +607,6 @@ a {
   margin: 15px 0;
 }
 
-.contactus-form-container {
-  margin-top: 7.5rem;
-  width: 100%;
-  background-color: rgb(231, 231, 231);
-}
-
 .contactus-heading {
   font-size: 5em;
   color: var(--bgOrange);
@@ -618,14 +619,16 @@ a {
 }
 
 .contactus-form-container {
-  margin-top: 7.5rem;
+  width: 50%;
+  background-color: rgb(231, 231, 231);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .contactus-form {
-  margin-top: 1.5rem;
+  width: 100%;
+  margin-top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -659,12 +662,13 @@ form {
 .formfield-textarea {
   height: auto;
   padding-top: 1rem;
+  resize: none;
 }
 
 #submit-btn {
   border: none;
   font-size: 1rem;
-  margin: 1rem 0;
+  margin-top: 1rem;
 }
 
 #submit-btn:hover {
@@ -718,6 +722,14 @@ footer {
 .icon-wrapper {
   display: flex;
   gap: 1rem;
+}
+
+.contactImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: blobAnimation 3s linear infinite;
 }
 
 @media (max-width: 1024px) {
