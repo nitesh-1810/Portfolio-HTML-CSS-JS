@@ -29,6 +29,14 @@
   margin: 0 auto;
 }
 
+.contact-box {
+  display: flex;
+}
+
+.contactus-image {
+  width: 50%;
+}
+
 .footer-container {
   width: 800px;
   /* to center this div */
