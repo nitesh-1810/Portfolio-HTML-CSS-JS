@@ -707,6 +707,7 @@ footer {
 .link-wrapper {
   display: flex;
   gap: 1.2rem;
+  align-items: baseline;
 }
 
 .link-wrapper div a {
