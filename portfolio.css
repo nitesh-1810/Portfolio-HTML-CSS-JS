@@ -405,9 +405,9 @@ a {
 .project-card {
   width: 75%;
   height: 450px;
-  background-image: url("./images/Project1.png");
+  /* background-image: url("./images/BuyNow.png"); */
   /* cover background full with image */
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   /* lec 2 :- 26:00 - explain how overlap content over image */
   position: relative;
@@ -449,6 +449,16 @@ a {
 /* We want tint blue come in action over card when we hover on card , that why we change transform: scaleX to 1 */
 .project-card:hover::before {
   transform: scaleX(1);
+}
+
+.blur-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f9a; /* Adjust the background color and opacity as needed */
+  backdrop-filter: blur(1px); /* Adjust the blur intensity as needed */
 }
 
 .project-number {
@@ -548,7 +558,7 @@ a {
 }
 
 #project1 {
-  background-image: url("./images/Project1.png");
+  background-image: url("./images/BuyNow.png");
 }
 
 #project2 {
