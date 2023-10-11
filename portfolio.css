@@ -379,6 +379,100 @@ a {
   color: black;
 }
 
+#academic {
+  /* border: 1px solid rgb(255, 140, 0); */
+  position: relative;
+  border-top: 5px solid #292b46;
+  border-bottom: 5px solid #292b46;
+}
+
+.timelineBox {
+  width: 1000px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  padding: 10px;
+  position: relative;
+}
+
+.timelineItem {
+  height: 100px;
+  width: 100%;
+  /* border: 1px solid rgb(43, 255, 0); */
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.rightTimeline {
+  display: flex;
+  flex-flow: row-reverse;
+  align-items: center;
+}
+
+.leftTimeline {
+  display: flex;
+  align-items: center;
+}
+
+.leftTimeline::after {
+  content: "";
+  margin-left: 63px;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: 4px solid #292b46;
+  border-radius: 50%;
+  z-index: 99;
+  animation: circleAnimation 3s linear infinite;
+}
+
+.rightTimeline::after {
+  content: "";
+  margin-right: 63px;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: 4px solid #292b46;
+  border-radius: 50%;
+  z-index: 99;
+  animation: circleAnimation 3s linear infinite;
+}
+
+@keyframes circleAnimation {
+  50% {
+    background-color: #292b46;
+  }
+}
+
+.timelineItem div {
+  background-color: #292b46;
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+#academic .timelineBox::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #292b46;
+  top: 0%;
+  bottom: 0%;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.academic-fadded-text {
+  font-size: 6rem;
+  font-style: bold;
+  position: absolute;
+  color: rgb(231, 231, 231);
+  bottom: -4.1%;
+  right: 0%;
+  user-select: none;
+  overflow-y: hidden;
+}
+
 .project-section {
   background-color: rgb(231, 231, 231);
   /* Problem herein margin */
