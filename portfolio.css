@@ -18,7 +18,7 @@
 }
 
 .container {
-  width: 1000px;
+  width: 100vw;
   /* to center this div */
   margin: 0 auto;
 }
@@ -166,7 +166,7 @@ a {
   /* position sifted to down */
   position: absolute;
   bottom: -16%;
-  left: -15%;
+  left: -0%;
 }
 
 .hero-section-left {
@@ -382,8 +382,10 @@ a {
 #academic {
   /* border: 1px solid rgb(255, 140, 0); */
   position: relative;
-  border-top: 5px solid #292b46;
-  border-bottom: 5px solid #292b46;
+  /* border-top: 5px solid #292b46; */
+  /* border-bottom: 5px solid #292b46; */
+  background-color: rgb(231, 231, 231);
+  padding-bottom: 150px;
 }
 
 .timelineBox {
@@ -395,7 +397,7 @@ a {
 }
 
 .timelineItem {
-  height: 100px;
+  /* height: 200px; */
   width: 100%;
   /* border: 1px solid rgb(43, 255, 0); */
   margin: 10px 0px 10px 0px;
@@ -422,7 +424,7 @@ a {
   border: 4px solid #292b46;
   border-radius: 50%;
   z-index: 99;
-  animation: circleAnimation 3s linear infinite;
+  animation: circleAnimation 1.5s linear infinite;
 }
 
 .rightTimeline::after {
@@ -434,12 +436,13 @@ a {
   border: 4px solid #292b46;
   border-radius: 50%;
   z-index: 99;
-  animation: circleAnimation 3s linear infinite;
+  animation: circleAnimation 1s linear infinite;
 }
 
 @keyframes circleAnimation {
   50% {
-    background-color: #292b46;
+    /* background-color: #292b46; */
+    margin-top: 15px;
   }
 }
 
@@ -460,17 +463,23 @@ a {
   bottom: 0%;
   left: 50%;
   margin-left: -3px;
+  height: calc(100% + 150px);
 }
 
 .academic-fadded-text {
   font-size: 6rem;
   font-style: bold;
   position: absolute;
-  color: rgb(231, 231, 231);
-  bottom: -4.1%;
+  color: white;
+  bottom: -2.5%;
   right: 0%;
   user-select: none;
   overflow-y: hidden;
+}
+
+.tackStack {
+  width: 100px;
+  height: 100px;
 }
 
 .project-section {
@@ -948,13 +957,13 @@ footer {
 
 @media (min-width: 1023px) and (max-width: 1280px) {
   .container {
-    width: 1000px;
+    width: 100vw;
     /* to center this div */
     margin: 0 auto;
   }
 
   .faded-text {
-    left: -10%;
+    left: 0%;
   }
 
   #skills {
