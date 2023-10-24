@@ -447,11 +447,16 @@ a {
 }
 
 .timelineItem div {
-  background-color: #292b46;
+  background-color: #f8f8f9;
   width: 400px;
   padding: 10px;
   border-radius: 10px;
-  color: white;
+  border: 3px solid #292b46;
+  /* color: white; */
+}
+
+.timelineItem div h2 {
+  margin-bottom: 10px;
 }
 
 #academic .timelineBox::after {
