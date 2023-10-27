@@ -10,6 +10,23 @@
 :root {
   --bgOrange: #e84949;
 }
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+  height: 80px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
 
 #wrapper {
   height: 100vh;
@@ -21,6 +38,8 @@
   width: 100vw;
   /* to center this div */
   margin: 0 auto;
+
+  border-top: 1px solid transparent;
 }
 
 .contact-container {
@@ -50,11 +69,21 @@
   margin: 0 auto;
 }
 
+.nav-container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  background-color: white;
+  width: 100%;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
 }
 
 .logo-container {
@@ -77,7 +106,7 @@
 
 .nav-items {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   padding: 0 4em;
 }
 
