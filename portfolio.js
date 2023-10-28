@@ -1,9 +1,15 @@
 var typeData = new Typed(".role", {
-  strings: ["Frontend Developer", "Web Developer", "Coder"],
+  strings: [
+    "a Frontend Developer.",
+    "a Web Developer.",
+    "a React JS Developer.",
+    "Exploring React Native.",
+  ],
   loop: true,
   typeSpeed: 100,
   backSpeed: 80,
   backDelay: 1000,
+  showCursor: false,
 });
 
 var dots = document.getElementsByClassName("dots");
