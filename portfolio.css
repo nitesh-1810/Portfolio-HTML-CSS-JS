@@ -218,8 +218,10 @@ a {
 
 .hero-section-description {
   margin-top: 1rem;
-  width: 70%;
+  width: 669px;
   font-weight: 500;
+  line-height: 1.7;
+  font-size: large;
 }
 
 .role {
@@ -1042,6 +1044,7 @@ footer {
 
   .faded-text {
     left: 0%;
+    bottom: -14%;
   }
 
   #skills {
