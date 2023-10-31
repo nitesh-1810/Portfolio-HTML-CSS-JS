@@ -746,16 +746,19 @@ a {
 
 #project2 {
   margin: 20%;
-  background-image: url("./images/Project2.png");
+  background-image: url("./images/monsoonmate.jpg");
+  background-size: cover;
 }
 
 #project3 {
-  background-image: url("./images/Project3.png");
+  background-image: url("./images/tasktracker.jpg");
+  background-size: cover;
 }
 
 #project4 {
   margin: 20%;
-  background-image: url("./images/Project4.png");
+  background-image: url("./images/Portfolio.jpg");
+  background-size: cover;
 }
 
 .skills-container {
