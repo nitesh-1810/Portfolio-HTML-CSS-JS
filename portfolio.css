@@ -788,8 +788,8 @@ a {
 }
 
 .skills-logo {
-  width: 60px;
-  height: 60px;
+  width: 72px;
+  height: 72px;
 
   transition: all 0.5s;
 }
@@ -803,7 +803,7 @@ a {
   font-style: bold;
   position: absolute;
   color: rgb(231, 231, 231);
-  bottom: -25.5%;
+  bottom: -20.1%;
   right: -9%;
   user-select: none;
   overflow-y: hidden;
@@ -827,24 +827,24 @@ a {
 
 .skill-heading {
   color: var(--bgOrange);
-  font-size: 40px;
+  font-size: 35px;
   font-style: bold;
-  line-height: 50px;
+  line-height: 45px;
 }
 
 .caps {
   font-size: 80px;
 }
 
-.skill-subHeading {
+/* .skill-subHeading {
   margin-top: 1rem;
   width: 85%;
   text-align: justify;
-}
+} */
 
-.skill-subHeading p {
+/* .skill-subHeading p {
   margin: 15px 0;
-}
+} */
 
 .contactus-heading {
   font-size: 5em;
@@ -1086,4 +1086,54 @@ footer {
     flex-direction: column;
     gap: 120px;
   }
+}
+
+/* Skills Section CSS*/
+
+.highlight {
+  color: #e74c3c;
+}
+
+.subtitle {
+  font-size: 1.2em;
+}
+
+.main-content {
+  max-width: 800px;
+  margin: 15px 0;
+}
+
+.experience {
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: large;
+}
+
+.current-tech,
+.familiar-tech,
+.dev-tools {
+  font-size: large;
+  color: #e74c3c;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.tech-stack,
+.familiar-stack,
+.dev-tools-list {
+  list-style: none;
+  padding: 0;
+}
+
+.tech-stack li,
+.familiar-stack li,
+.dev-tools-list li {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px;
+  border: 2px solid #e74c3c;
+  /* color: #fff; */
+  border-radius: 5px;
+  font-weight: bold;
 }
