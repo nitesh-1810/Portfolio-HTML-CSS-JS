@@ -518,27 +518,27 @@
               </h3>
             </div>
             <div class="contactus-form">
-              <form action="">
+              <form onsubmit="event.preventDefault(); sendMail();">
                 <div class="formfield-container">
                   <input
                     class="formfield"
                     type="'text"
                     name="name"
-                    id=""
+                    id="name"
                     placeholder="Enter your name"
                   />
                   <input
                     class="formfield"
                     type="'email"
                     name="email"
-                    id=""
+                    id="email"
                     placeholder="Enter your email"
                   />
                   <input
                     class="formfield"
                     type="'text"
                     name="subject"
-                    id=""
+                    id="subject"
                     placeholder="Enter your subject"
                   />
                   <textarea
@@ -546,7 +546,7 @@
                     cols="30"
                     rows="5"
                     name="message"
-                    id=""
+                    id="message"
                     placeholder="Enter your message"
                   ></textarea>
                 </div>
@@ -612,5 +612,14 @@
       crossorigin="anonymous"
     ></script>
     <script src="./portfolio.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("yC8aolbmWJd-X8dUh");
+      })();
+    </script>
   </body>
 </html>
