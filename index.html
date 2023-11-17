@@ -520,35 +520,43 @@
             <div class="contactus-form">
               <form onsubmit="event.preventDefault(); sendMail();">
                 <div class="formfield-container">
-                  <input
-                    class="formfield"
-                    type="'text"
-                    name="name"
-                    id="name"
-                    placeholder="Enter your name"
-                  />
-                  <input
-                    class="formfield"
-                    type="'email"
-                    name="email"
-                    id="email"
-                    placeholder="Enter your email"
-                  />
-                  <input
-                    class="formfield"
-                    type="'text"
-                    name="subject"
-                    id="subject"
-                    placeholder="Enter your subject"
-                  />
-                  <textarea
-                    class="formfield formfield-textarea"
-                    cols="30"
-                    rows="5"
-                    name="message"
-                    id="message"
-                    placeholder="Enter your message"
-                  ></textarea>
+                  <div id="user_name">
+                    <input
+                      class="formfield"
+                      type="'text"
+                      name="name"
+                      id="name"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+                  <div id="user_email">
+                    <input
+                      class="formfield"
+                      type="'email"
+                      name="email"
+                      id="email"
+                      placeholder="Enter your email"
+                    />
+                  </div>
+                  <div id="user_subject">
+                    <input
+                      class="formfield"
+                      type="'text"
+                      name="subject"
+                      id="subject"
+                      placeholder="Enter your subject"
+                    />
+                  </div>
+                  <div id="user_message">
+                    <textarea
+                      class="formfield formfield-textarea"
+                      cols="30"
+                      rows="5"
+                      name="message"
+                      id="message"
+                      placeholder="Enter your message"
+                    ></textarea>
+                  </div>
                 </div>
                 <div>
                   <button type="submit" class="btn-pink" id="submit-btn">
