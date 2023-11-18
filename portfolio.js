@@ -66,18 +66,22 @@ const validation = () => {
   var userEmail = document.getElementById("user_email");
   var userSubject = document.getElementById("user_subject");
   var userMessage = document.getElementById("user_message");
+
+  function validateEmail(email) {
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    return emailRegex.test(email);
+  }
+
   if (name === "") {
-    console.log("name empty");
     var existingParagraph = userName.querySelector("p");
 
     if (!existingParagraph) {
       var newParagraph = document.createElement("p");
 
-      // Set the text content of the paragraph
-      newParagraph.textContent = "Input value is empty.";
+      newParagraph.textContent = "* Please enter your name.";
+      newParagraph.style.marginTop = "10px";
       newParagraph.style.color = "red";
-
-      // Append the paragraph to the div
       userName.appendChild(newParagraph);
     }
   } else {
@@ -86,67 +90,68 @@ const validation = () => {
       userName.removeChild(existingParagraph);
     }
   }
-  if (email === "") {
-    console.log("email empty");
+
+  if (email === "" || !validateEmail(email)) {
     var existingParagraph = userEmail.querySelector("p");
 
     if (!existingParagraph) {
       var newParagraph = document.createElement("p");
 
-      // Set the text content of the paragraph
-      newParagraph.textContent = "Input value is empty.";
+      newParagraph.textContent = "* Please enter valid email.";
+      newParagraph.style.marginTop = "10px";
       newParagraph.style.color = "red";
-      // Append the paragraph to the div
+
       userEmail.appendChild(newParagraph);
     }
   } else {
-    // If not empty, remove any existing paragraphs
     var existingParagraph = userEmail.querySelector("p");
     if (existingParagraph) {
       userEmail.removeChild(existingParagraph);
     }
   }
   if (subject === "") {
-    console.log("subject empty");
     var existingParagraph = userSubject.querySelector("p");
 
     if (!existingParagraph) {
       var newParagraph = document.createElement("p");
 
-      // Set the text content of the paragraph
-      newParagraph.textContent = "Input value is empty.";
+      newParagraph.textContent = "* Please enter your subject.";
       newParagraph.style.color = "red";
-      // Append the paragraph to the div
+      newParagraph.style.marginTop = "10px";
+
       userSubject.appendChild(newParagraph);
     }
   } else {
-    // If not empty, remove any existing paragraphs
     var existingParagraph = userSubject.querySelector("p");
     if (existingParagraph) {
       userSubject.removeChild(existingParagraph);
     }
   }
   if (message === "") {
-    console.log("message empty");
     var existingParagraph = userMessage.querySelector("p");
 
     if (!existingParagraph) {
       var newParagraph = document.createElement("p");
 
-      // Set the text content of the paragraph
-      newParagraph.textContent = "Input value is empty.";
+      newParagraph.textContent = "* Please enter your message.";
       newParagraph.style.color = "red";
-      // Append the paragraph to the div
+      newParagraph.style.marginTop = "10px";
+
       userMessage.appendChild(newParagraph);
     }
   } else {
-    // If not empty, remove any existing paragraphs
     var existingParagraph = userMessage.querySelector("p");
     if (existingParagraph) {
       userMessage.removeChild(existingParagraph);
     }
   }
-  if (name !== "" && email !== "" && subject !== "" && message !== "") {
+  if (
+    name !== "" &&
+    email !== "" &&
+    validateEmail(email) &&
+    subject !== "" &&
+    message !== ""
+  ) {
     return true;
   } else {
     return false;
