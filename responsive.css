@@ -163,6 +163,20 @@ code paste here
   .readMore {
     display: none;
   }
+  .project-number {
+    font-size: 60px;
+
+    display: block;
+  }
+  .project-number-right {
+    right: -15px;
+    top: -35px;
+  }
+
+  .project-number-left {
+    left: -15px;
+    top: -35px;
+  }
 }
 
 /* Small devices (tablets) */
