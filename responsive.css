@@ -87,27 +87,81 @@ code paste here
     height: 0;
   }
   .leftTimeline::after {
-    content: "";
-    margin-left: 0px;
-    width: 0px;
-    height: 0px;
+    margin-left: 0;
+    margin-right: 10px;
+    width: 12px;
+    height: 10px;
     background-color: white;
-    border: 0px solid #292b46;
-    border-radius: 0%;
-    z-index: 0;
-    animation: circleAnimation 1.5s linear infinite;
+    border: 3px solid #292b46;
+  }
+  .leftTimeline {
+    display: flex;
+
+    flex-flow: row-reverse;
+    align-items: center;
   }
 
   .rightTimeline::after {
-    content: "";
-    margin-right: 0px;
-    width: 0px;
-    height: 0;
+    margin-right: 10px;
+    width: 12px;
+    height: 10px;
     background-color: white;
-    border: 0px solid #292b46;
-    border-radius: 0%;
-    z-index: 0;
-    animation: circleAnimation 1s linear infinite;
+    border: 3px solid #292b46;
+  }
+  .page-header {
+    font-size: 30px;
+    padding-top: 10px;
+  }
+  .certificate-container {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .certificate-section {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  .certificate-card {
+    width: 90vw;
+  }
+  .project-container {
+    width: 100vw;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-skills-container,
+  .project-skills-container-icons {
+    display: none;
+  }
+  .project-card {
+    width: 90vw;
+    height: 80vw;
+  }
+  .project-content-left {
+    left: 0%;
+  }
+  .project-content-right {
+    right: 0%;
+  }
+  #project2,
+  #project1,
+  #project4,
+  #project3 {
+    margin: 0%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .project-heading {
+    font-size: 20px;
+  }
+  .project-content {
+    bottom: 10%;
+    align-items: center;
+    justify-content: center;
+  }
+  .readMore {
+    display: none;
   }
 }
 
