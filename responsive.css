@@ -67,6 +67,48 @@ code paste here
   .resume {
     justify-content: center;
   }
+  .academic-fadded-text {
+    display: none;
+  }
+  .timelineBox {
+    width: 100vw;
+  }
+  #academic {
+    padding-bottom: 0px;
+  }
+  #academic .timelineBox::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    margin-left: 0px;
+    height: 0;
+  }
+  .leftTimeline::after {
+    content: "";
+    margin-left: 0px;
+    width: 0px;
+    height: 0px;
+    background-color: white;
+    border: 0px solid #292b46;
+    border-radius: 0%;
+    z-index: 0;
+    animation: circleAnimation 1.5s linear infinite;
+  }
+
+  .rightTimeline::after {
+    content: "";
+    margin-right: 0px;
+    width: 0px;
+    height: 0;
+    background-color: white;
+    border: 0px solid #292b46;
+    border-radius: 0%;
+    z-index: 0;
+    animation: circleAnimation 1s linear infinite;
+  }
 }
 
 /* Small devices (tablets) */
