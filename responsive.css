@@ -165,8 +165,6 @@ code paste here
   }
   .project-number {
     font-size: 60px;
-
-    display: block;
   }
   .project-number-right {
     right: -15px;
@@ -176,6 +174,95 @@ code paste here
   .project-number-left {
     left: -15px;
     top: -35px;
+  }
+  .skills-container {
+    width: 100vw;
+    padding: 1rem;
+    margin: 2rem auto;
+    gap: 0px;
+    display: block;
+  }
+  .skill-container-left {
+    width: 100%;
+  }
+  .skill-container-right {
+    display: none;
+  }
+  .skill-fade-text {
+    display: none;
+  }
+  .contact-box {
+    margin-top: 0rem;
+  }
+  .contactus-form-container {
+    width: 100%;
+  }
+  .contactus-image {
+    display: none;
+  }
+  .contactus-heading {
+    font-size: 40px;
+  }
+  .contactus-sub-heading {
+    font-size: 25px;
+  }
+  form {
+    width: 100%;
+    margin: 2rem 1rem;
+  }
+  .footer-container {
+    width: 100vw;
+  }
+  .footer-faded-text {
+    display: none;
+  }
+  .footer-wrapper {
+    padding: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Hover Effects */
+  .nav-items div:hover {
+    transition: 0.8s;
+    font-weight: bold;
+  }
+  .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .btn-pink:hover::before {
+    transform: scaleX(1);
+  }
+
+  .btn-pink:hover {
+    border: 3px solid var(--bgOrange);
+    color: black;
+  }
+  .cv:hover {
+    border: 3px solid rgba(7, 97, 22, 0.779);
+    color: black;
+  }
+  .certificate-card:hover {
+    transform: scale(1.02);
+  }
+  .project-card:hover::before {
+    transform: scaleX(1);
+  }
+  .project-card:hover .project-number {
+    display: block;
+    /* opacity: 1; */
+  }
+  .project-card:hover .project-content {
+    transform: scale(1.1);
+  }
+  #submit-btn:hover {
+    scale: 0.9;
+  }
+  .link-wrapper div a:hover {
+    color: var(--bgOrange);
+    text-decoration: none;
   }
 }
 
