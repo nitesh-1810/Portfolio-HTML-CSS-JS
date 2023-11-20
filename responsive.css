@@ -165,6 +165,7 @@ code paste here
   }
   .project-number {
     font-size: 60px;
+    display: block;
   }
   .project-number-right {
     right: -15px;
@@ -220,49 +221,6 @@ code paste here
     padding: 0.5rem;
     flex-direction: column;
     justify-content: center;
-  }
-
-  /* Hover Effects */
-  .nav-items div:hover {
-    transition: 0.8s;
-    font-weight: bold;
-  }
-  .close:hover {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .btn-pink:hover::before {
-    transform: scaleX(1);
-  }
-
-  .btn-pink:hover {
-    border: 3px solid var(--bgOrange);
-    color: black;
-  }
-  .cv:hover {
-    border: 3px solid rgba(7, 97, 22, 0.779);
-    color: black;
-  }
-  .certificate-card:hover {
-    transform: scale(1.02);
-  }
-  .project-card:hover::before {
-    transform: scaleX(1);
-  }
-  .project-card:hover .project-number {
-    display: block;
-    /* opacity: 1; */
-  }
-  .project-card:hover .project-content {
-    transform: scale(1.1);
-  }
-  #submit-btn:hover {
-    scale: 0.9;
-  }
-  .link-wrapper div a:hover {
-    color: var(--bgOrange);
-    text-decoration: none;
   }
 }
 
