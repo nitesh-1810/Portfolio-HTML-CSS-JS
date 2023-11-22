@@ -31,9 +31,9 @@ code paste here
   .faded-text {
     display: none;
   }
-  .hero-section-right {
-    display: none;
-  }
+  /* .hero-section-right {
+     display: none; 
+  } */
   .hero-section-left {
     display: flex;
     flex-direction: column;
@@ -53,8 +53,11 @@ code paste here
   }
   .hero-section {
     margin: 1rem auto;
-    padding: 0;
+    padding: 1.5rem;
     padding-bottom: 0rem;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 2rem;
   }
   .hero-section-description {
     margin-top: 0rem;
@@ -220,6 +223,9 @@ code paste here
     flex-direction: column;
     justify-content: center;
   }
+  .nav-items {
+    flex-direction: column;
+  }
 }
 
 /* Small devices (tablets) */
@@ -310,7 +316,6 @@ code paste here
     width: 100vw;
     /* to center this div */
     margin: 0 auto;
-    background-color: royalblue;
   }
 
   .faded-text {
