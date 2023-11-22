@@ -185,3 +185,9 @@ function sendMail() {
       .catch((err) => console.log(err));
   }
 }
+
+const menu = () => {
+  const navItems = document.getElementsByClassName("nav-items");
+
+  navItems[0].style.display = "flex";
+};
