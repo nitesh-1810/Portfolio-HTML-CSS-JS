@@ -109,6 +109,13 @@
   gap: 1.5rem;
   padding: 0 4em;
 }
+.mobNav {
+  display: none;
+}
+
+.profile {
+  display: none;
+}
 
 .nav-items div {
   font-size: 20px;
