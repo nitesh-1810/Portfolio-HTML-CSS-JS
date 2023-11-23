@@ -21,6 +21,39 @@ code paste here
   .nav-items {
     display: none;
   }
+  .mobNav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    /* justify-content: center; */
+    gap: 2rem;
+    height: 100vh;
+    width: 100vw;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 179, 255); /* Fallback color */
+    /* background-color: rgba(0, 0, 0, 0.4); Black w/ opacity */
+  }
+  .mobNav div a {
+    text-decoration: none;
+    color: rgb(250, 248, 248);
+    font-size: 1.3rem;
+  }
+
+  .profile {
+    margin-top: 2rem;
+    display: block;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    border: 2px solid gray;
+    background-image: url("./images/Nitesh Profile Pic.jpg");
+    background-size: 100% 100%;
+  }
   .menu {
     display: block;
     padding: 0 1.5rem;
