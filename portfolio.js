@@ -187,7 +187,7 @@ function sendMail() {
 }
 
 const menu = () => {
-  const navItems = document.getElementsByClassName("nav-items");
+  const navItems = document.getElementsByClassName("mobNav");
 
   navItems[0].style.display = "flex";
 };
