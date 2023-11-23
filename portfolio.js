@@ -191,3 +191,8 @@ const menu = () => {
 
   navItems[0].style.display = "flex";
 };
+
+function hideMobNav() {
+  var mobNav = document.querySelector(".mobNav");
+  mobNav.style.display = "none";
+}
